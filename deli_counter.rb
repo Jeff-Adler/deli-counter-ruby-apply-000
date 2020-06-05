@@ -13,12 +13,16 @@ def line(katz_deli)
   end
 end
 
+
 def take_a_number(katz_deli, name)
   katz_deli << name
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
   ## {katz_deli.length} could be substituted by {katz_deli.index(name) + 1}, but error will arise
   ## if the katz_deli contains the same name earlier in the array
 end
+
+
+
 
 def now_serving(katz_deli)
   if katz_deli.empty?
